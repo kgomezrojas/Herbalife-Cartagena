@@ -77,8 +77,10 @@ html{
     color:greenyellow ;
 }
 #menuPhoneAria{
-    display: none;
+    display: block;
 }
+
+
 @media (max-width:1080px) {
     .navegador{
         display: none;
@@ -102,6 +104,14 @@ html{
     #menuPhoneAria{
         display: flex;
         background-color: rgb(184, 184, 184);
+    }
+    .nameProduct{
+        font-weight: 900;
+        display: flex;
+        align-items:start;
+        justify-items: left;
+        width: 100px;
+        height: 130px;
     }
 }
 
