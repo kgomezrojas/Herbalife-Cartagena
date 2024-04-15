@@ -1,0 +1,62 @@
+iframe{
+    background-color: green;
+    height: 400px;
+    box-shadow: rgb(134, 134, 134) 0 1px 3px 1px;
+}
+#tituloHead{
+    background-color: rgb(199, 199, 199);
+}
+.DownloadSec{
+    display: flex;
+    justify-content: space-around;
+}
+@media (max-width:320px) {
+    .DownloadSec{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    iframe{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+}
+@media (max-width:425px) {
+    .DownloadSec{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    iframe{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    .inFooter{
+        width: 90%;
+    }
+}
+@media (max-width:768px) {
+    .DownloadSec{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+@media (min-width:1080px) {
+    #menuPhoneAria{
+        display:block;
+        background-color: rgb(184, 184, 184);
+    }
+    
+}

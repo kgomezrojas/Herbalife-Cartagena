@@ -1,0 +1,107 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.menu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.menuimg{
+    height: 300px;
+    width: 400px;
+    background-color: aqua;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.menuimg:hover .textimg{
+    background-color: rgb(184, 184, 184);
+    scale: 105%;
+    padding: 2px 9px 2px 9px;
+    border-radius: 25px;
+    border: solid 2px white;
+}
+.textimg{
+    font-size: 2rem;
+    color: white;
+    font-weight: 900;
+    user-select:none;
+}
+.textimg:hover{
+    box-shadow: rgb(56, 56, 56) 0 2px 3px 2px;
+}
+.InfoProduct{
+    width: 90%;
+    background-color: rgb(255, 254, 254);
+    /* border: 1px solid rgb(139, 139, 139); */
+    margin: 8px 15px;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgb(134, 134, 134) 0 1px 1px 1px;
+}
+.iconoProduct{
+    height: 140px;
+    
+}
+.nameProduct{
+    font-weight: 900;
+    display: flex;
+    align-items:start;
+    justify-items: left;
+    width: 600px;
+    height: 130px;
+}
+.buyBoton{
+    width: 100px;
+    height: 40px;
+    background-color: greenyellow;
+    border:none;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    user-select: none;
+}
+.buyBoton:hover{
+    border: 1px green solid;
+    scale: 105%;
+    box-shadow: rgb(39, 255, 11) 0 1px 2px 1px;
+    background-color: white;
+    color:greenyellow ;
+}
+#menuPhoneAria{
+    display: none;
+}
+@media (max-width:1080px) {
+    .navegador{
+        display: none;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .menuimg{
+        width: 90%;
+        height: 100px;
+        margin: 2px;
+    }
+    .textimg{
+        font-size: small;
+        padding: 2px 9px 2px 9px;
+        border-radius: 25px;
+        border: solid 2px white;
+        background-color: rgb(184, 184, 184);
+    }
+    #menuPhoneAria{
+        display: flex;
+        background-color: rgb(184, 184, 184);
+    }
+}
+

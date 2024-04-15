@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos |Herbalife</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bungee+Spice&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="./assets/logo/icon.png" type="image/x-icon">
+<link rel="stylesheet" href="./productos.css">
+</head>
+<body>
+    <header>
+        <div>
+        <img class="logo" src="./assets/logo/LogoEjemplo.png" alt="">
+        </div>
+
+        <div>
+            <div id="menuPhoneAria">
+                <img onclick="mostrarMenu();" id="menuPhone" src="./assets/logo/menu.png" alt="">
+                <img src="./assets/logo/x.png" id="cerrarMenu" alt="Cerrar">
+            </div>
+            <nav >
+                <a class="navegador" href="./index.html">Inicio</a>
+                <a class="navegador" style="color: white;"  href="#">Productos</a>
+                <!-- <a class="navegador" href="./nutricion.html">Nutrición y Bienestar</a> -->
+                <a class="navegador" href="./nosotros.html">Nosotros</a>
+                <a class="navegador" href="./contact.html">Contacta nos</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h2>Selecciona el tipo de producto</h2>
+        <div class="menu">
+            <div  onclick="Nutricion();"  style="background-image: url(./assets/image/1.3-Nutricion385x385.png);" class="menuimg"><span class="textimg">Nutrición</span></div></a>
+            <div  onclick="SaludyBelleza();" style="background-image: url(./assets/image/Nutricion-deportiva.jpg);" class="menuimg"><span class="textimg">Salud y Belleza</span></div></a>
+            <div  onclick="Catalogo();" style="background-image: url(./assets/image/Nutricion-Externa-345x345.jpg);" class="menuimg"><span class="textimg">Todos</span></div></a>
+        </div>
+        <section id="productosSec">
+            <div>
+                <h2 id="tittleProducto"></h2>
+                <!-- <div id="filter-buttons">
+                    <button class="filter-button" data-filter="all">Todos</button>
+                    <button class="filter-button" data-filter="categoria1">Energizantes</button>
+                    <button class="filter-button" data-filter="categoria2">Bebidas</button>
+                </div> -->
+            </div>
+            <div id="NutricionContainer" class="producto">
+                <div class="InfoProduct" class="item">
+                    <img class="iconoProduct" src="./assets/productos/Batido_Nutricional_Fórmual1_Dulce_de_Leche_cremoso_Render_1200x1200.jpg" alt="">
+                    <span class="nameProduct">Batido Nutricional Formula 1 Dulce de Leche Cremoso</span>
+                    <button onclick="RealizarCompra();" class="buyBoton">Comprar</button>
+                </div>
+                <div class="InfoProduct" class="item">
+                    <img class="iconoProduct" src="./assets/productos/Batido_Nutricional_f1_Cookies_and_Cream.png" alt="">
+                    <span class="nameProduct">Batido Nutricional Formula 1 Cookies and Cream</span>
+                    <button class="buyBoton">Comprar</button>
+                </div>
+                <div class="InfoProduct" class="item">
+                    <img class="iconoProduct" src="./assets/productos/Batido_Nutricional_f1_Chocoavellana.jpg" alt="">
+                    <span class="nameProduct">Batido Nutricional Formula 1 Chocoavellana</span>
+                    <button class="buyBoton">Comprar</button>
+                </div>
+            </div>
+            <div id="SaludyBellezaContainer" class="producto">
+                <div class="InfoProduct" class="item">
+                    <img class="iconoProduct" src="./assets/productos/salud y belleza/Collagen-Drink-Sabor-Limonada-de-Fresa.png" alt="">
+                    <span class="nameProduct">Collagen Sabor Limonada Fresa</span>
+                    <button class="buyBoton">Comprar</button>
+                </div>
+                <div class="InfoProduct" class="item">
+                    <img class="iconoProduct" src="./assets/productos/salud y belleza/Herbalifeline-Plus.png" alt="">
+                    <span class="nameProduct">Herbalifeline Plus+</span>
+                    <button class="buyBoton">Comprar</button>
+                </div>
+                <div class="InfoProduct" class="item">
+                    <img class="iconoProduct" src="./assets/productos/salud y belleza/Multivitaminico-Formula-2.png" alt="">
+                    <span class="nameProduct">Multivitaminico Formula 2</span>
+                    <button class="buyBoton">Comprar</button>
+                </div>
+            </div>
+            <div id="CatalogoContainer" class="producto">
+                <div class="InfoProduct" class="item">
+                    <img class="iconoProduct" src="./assets/productos/CR7-Drive-Sabor-Frutos-Rojos.png" alt="">
+                    <span class="nameProduct">CR7 Drive Sabor Frutos Rojos</span>
+                    <button class="buyBoton">Comprar</button>
+                </div>
+                <div class="InfoProduct" class="item">
+                    <img class="iconoProduct" src="./assets/productos/Rebuild-Strength-Sabor-Chocolate.png" alt="">
+                    <span class="nameProduct">Rebuild Strength Sabor a Chocolate</span>
+                    <button class="buyBoton">Comprar</button>
+                </div>
+                <div class="InfoProduct" class="item">
+                    <img class="iconoProduct" src="./assets/productos/Bebida-Energizante-NRG.png" alt="">
+                    <span class="nameProduct">Bebida Energizante NRG</span>
+                    <button href="./comprar.html" class="buyBoton">Comprar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="inFooter"><img class="logoFooter" src="./assets/logo/LogoEjemplo.png" alt="">
+            <div>© 2020 Herbalifre Cartagena Colombia, Inc. Prohibida la reproducción total o parcial sin permiso escrito. Todos los derechos reservados. Todos los productos y nombres comerciales que aparecen en este sitio, a menos que se indique lo contrario, son propiedad de Herbalifre Cartagena Colombia, Inc.</div>
+        </div>
+        <div>
+            <h5>Contacta Nos</h5>
+            <div>HerbalifeCTG@gmail.com</div>
+            <div>+57 30125734567</div>
+        </div>
+        <div class="inFooter">
+            <h5>Información</h5>
+            <div>Términos de Uso</div>
+            <div>Política de Privacidad</div>
+            <div>Herramientas de la web</div>
+            <div>Contáctanos</div>
+            <div>Política de Cookies</div>
+            <div>Terminos y Condiciones</div>
+        </div>
+    </footer>
+    <script src="./productos.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
